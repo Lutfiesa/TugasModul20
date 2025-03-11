@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="GO Rest - Get Data User">
+    <test name="Positive">
+        <classes>
+            <class name="GetDataUser.Positif.GetDataUser"/>
+        </classes>
+    </test>
+    <test name="Negatif">
+        <classes>
+            <class name="GetDataUser.Negatif.getDataUser"/>
+        </classes>
+    </test>
+</suite>

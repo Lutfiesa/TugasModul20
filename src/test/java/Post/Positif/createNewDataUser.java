@@ -1,4 +1,4 @@
-package Put.Positif;
+package Post.Positif;
 
 import io.github.cdimascio.dotenv.Dotenv;
 import io.restassured.RestAssured;

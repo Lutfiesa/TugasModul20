@@ -1,8 +1,7 @@
-package Put.Negatif;
+package Post.Negatif;
 
 import io.github.cdimascio.dotenv.Dotenv;
 import io.restassured.RestAssured;
-import org.hamcrest.Matchers;
 import org.json.JSONObject;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -40,6 +39,32 @@ public class createNewDataUser {
         String status = "active";
 
         JSONObject bodyJson = new JSONObject();
+        bodyJson.put("email", generatedEmail);
+        bodyJson.put("gender", gender);
+        bodyJson.put("status", status);
+
+        RestAssured.given()
+                .header("Authorization", "Bearer " + tokenAuth)
+                .header("Content-Type", "application/json")
+                .header("Accept", "application/json")
+                .body(bodyJson.toString())
+                .when().post()
+                .then().log().all()
+                .assertThat().statusCode(422);
+
+    }
+
+    @Test
+    public void creatNewDataUserWithMaxCaracter(){
+
+        String tokenAuth = env.get("ACCESS_TOKEN");
+        System.out.println("Token: " + tokenAuth);
+        String name = "lutfiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii";
+        String gender = "male";
+        String status = "active";
+
+        JSONObject bodyJson = new JSONObject();
+        bodyJson.put("name", name);
         bodyJson.put("email", generatedEmail);
         bodyJson.put("gender", gender);
         bodyJson.put("status", status);

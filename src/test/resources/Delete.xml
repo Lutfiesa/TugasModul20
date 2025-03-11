@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="GO Rest - Delete New Data">
+    <test name="Positive">
+        <classes>
+            <class name="Delete.Positif.deleteDataUser"/>
+        </classes>
+    </test>
+    <test name="Negatif">
+        <classes>
+            <class name="Delete.Negatif.deleteDataUser"/>
+        </classes>
+    </test>
+</suite>

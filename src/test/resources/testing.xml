@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="TestNG GoRest"  >
+    <suite-files>
+        <suite-file path="GETAllUser.xml" />
+        <suite-file path="GETDataUser.xml" />
+        <suite-file path="Post.xml" />
+        <suite-file path="Put.xml" />
+        <suite-file path="Delete.xml" />
+    </suite-files>
+</suite>

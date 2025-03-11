@@ -1,43 +1,25 @@
 {
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "type": "object",
   "properties": {
-    "data": {
-      "type": "object",
-      "properties": {
-        "id": {
-          "type": "integer"
-        },
-        "email": {
-          "type": "string",
-          "format": "email"
-        },
-        "first_name": {
-          "type": "string"
-        },
-        "last_name": {
-          "type": "string"
-        },
-        "avatar": {
-          "type": "string",
-          "format": "uri"
-        }
-      },
-      "required": ["id", "email", "first_name", "last_name", "avatar"]
+    "id": {
+      "type": "integer"
     },
-    "support": {
-      "type": "object",
-      "properties": {
-        "url": {
-          "type": "string",
-          "format": "uri"
-        },
-        "text": {
-          "type": "string"
-        }
-      },
-      "required": ["url", "text"]
+    "name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string",
+      "format": "email"
+    },
+    "gender": {
+      "type": "string",
+      "enum": ["male", "female"]
+    },
+    "status": {
+      "type": "string",
+      "enum": ["active", "inactive"]
     }
   },
-  "required": ["data", "support"]
+  "required": ["id", "name", "email", "gender", "status"]
 }
