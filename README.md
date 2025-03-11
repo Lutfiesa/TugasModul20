@@ -13,11 +13,11 @@ Sebelum memulai, pastikan Anda telah menginstal beberapa alat berikut di sistem 
 Langkah pertama adalah meng-clone repository proyek dari GitHub ke sistem lokal Anda.
 
 ```bash
-git clone https://github.com/Lutfiesa/BelajarAPIAutomationFramework.git
+git clone https://github.com/Lutfiesa/TugasModul20.git
 ```
 Setelah cloning selesai, pindahlah ke direktori proyek:
 ```bash
-cd BelajarAPIAutomationFramework
+cd TugasModul20
 ```
 ## Langkah 2: Set Up Proyek
 Jika Anda menggunakan IntelliJ IDEA, buka proyek ini di IDE Anda:
