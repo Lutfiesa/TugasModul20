@@ -32,6 +32,8 @@ _Jika Anda tidak menggunakan IDE, Anda dapat menjalankan perintah berikut untuk 
 ```bash
 ./gradlew build
 ```
+_NOTE :_
+JIKA KETIKA MENGJALANKAN PROSES PUT ADA ERROR UBAH ID YANG TERTERA PADA SCRIPT PUT
 
 ## Langkah 3: Menjalankan Tes
 Setelah konfigurasi proyek dan environment selesai, Anda dapat menjalankan tes dengan menggunakan Gradle.
