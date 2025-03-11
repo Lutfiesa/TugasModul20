@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="GO Rest - Create New Data">
+    <test name="Positive">
+        <classes>
+            <class name="Post.Positif.createNewDataUser"/>
+        </classes>
+    </test>
+    <test name="Negatif">
+        <classes>
+            <class name="Post.Negatif.createNewDataUser"/>
+        </classes>
+    </test>
+</suite>
